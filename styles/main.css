@@ -1,0 +1,219 @@
+/* HTML document elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(../images/background.jpg);
+}
+
+body {
+    width: 1024px;
+    margin: auto;
+}
+
+/* classes represent common things to style */
+
+.navmenu {
+    border-radius: 10px;
+    background-image: url("../images/gradient_light.jpg");
+    width: 704.25px;
+}
+
+.navmenu ul {
+    list-style: none;
+    position: relative;
+}
+
+.navmenu ul li {
+    float: left;    /* each list item will span horizontally */
+    width: 234.75px;
+    text-align: center;
+    height: 50px;
+}
+
+.navmenu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-image: url("../images/gradient_light.jpg");
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.navmenu ul ul li {
+    float: none; /* keeps submenus aligned */
+}
+
+.navmenu ul li:hover > ul, .navmenu ul li:focus > ul {
+    display: block;
+}
+
+.navmenu ul li a {
+    /* make sure each link in the nav menu displays like a button */
+    display: block;
+    margin: 5px 2px;
+    padding: 7px 10px 4px;
+    color: #565656;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-shadow: 0 1px 1px white;
+    text-transform: uppercase;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.navmenu ul li a:hover, .navmenu ul li a:focus {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.navmenu > ul::after {
+     /* keeps the page from getting all messed up */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.line {
+    /* the dividing line */
+    height: 1px;
+    background-color: #161616;
+    border-bottom: 1px solid #7a7a7a;
+    margin: 1em 0;
+    overflow: hidden;
+}
+
+.flexcontainer {
+    display: flex;
+}
+
+img.thumbnail {
+    width: 64px;
+    height: 64px;
+}
+
+.leftaside {
+    width: 15%;
+}
+
+.rightaside {
+    width: 20%;
+}
+
+.cssvalidatorlogo {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
+/* elements */
+header img {
+    float: right;
+    width: 80px;
+    height: 100px;
+}
+
+header img, aside img, article img {
+    background-color: white; /* make sure images with transparency don't blend with background */
+}
+
+header h1, header h3 {
+    margin: 10px;
+}
+
+h1, h2, h3 {
+    font-family: "Impact", "Arial", sans-serif;
+    font-weight: normal;   /* oddly enough leaving at as it is makes it look too bulky */
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1 a:hover, h1 a:focus {
+    color: purple;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+article {
+    width: 65%;
+}
+
+aside nav {
+    margin: auto;
+}
+
+aside nav figure {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+figure img {
+    border: 3px solid #595959;
+    border-radius: 3px;
+}
+
+figure figcaption {
+    color: red;
+}
+
+article p {
+    color: yellow;
+}
+
+article, aside, header {
+    background-color: #333333;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+header a, aside a, article a {
+    text-decoration: none;
+}
+
+article, aside, header {
+    text-shadow: 0 2px 0 black;
+}
+
+h1, h1 a, h2, h3, footer {
+    color: white;
+}
+
+footer {
+    background-color: rgba( 0, 0, 0, 0.8);
+    font-size: 0.825em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+footer .cssvalidatorlogo {
+    display: block; /* forces CSS validator logo to center itself horizontally */
+    margin: auto;
+}
+
+footer a {
+    color: #cccccc;
+}
+
+footer a:hover, footer a:focus {
+    font-style: italic;
+}
+
+p {
+    font-family: "Times New Roman", "Arial", sans-serif;
+}
+
+footer p {
+    text-align: center;
+}

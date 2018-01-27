@@ -1,0 +1,39 @@
+label {
+    float: left;
+    clear: both; /* clear fix so some inputs don't get scrambled */
+    width: 12em;
+    margin-bottom: 10px;
+}
+
+article label, aside p {
+    color: yellow;
+}
+
+aside label {
+    color: red;
+}
+
+article input, select {
+    width: 15em;
+    margin-left: .5em;
+}
+
+input, select, textarea {
+    margin-bottom: .5em;
+}
+
+button {
+    width: 100px;
+    height: 28px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+textarea {
+    resize: none;
+}
+
+#buttons {
+    /* used in combination with the flexcontainer class to center a group of buttons horizontally */
+    justify-content: center;
+}
